@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          # Assure que Git récupère bien tous les tags pour identifier la release
+          fetch-depth: 0
 
       - name: Set up Go
         uses: actions/setup-go@v5
