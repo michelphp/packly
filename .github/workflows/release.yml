@@ -30,6 +30,7 @@ jobs:
       - name: Upload Binaries to Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.ref_name }}
           files: |
             build/packly-linux
             build/packly-windows.exe
