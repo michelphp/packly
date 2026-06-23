@@ -121,7 +121,7 @@ entrypoints = styles/app.scss
 
 Here is exactly how Packly processes and maps your physical files:
 
-**Phase A: Running `packly install**`
+**Phase A: Running `packly install`**
 Packly reads your `.ini` file and downloads the module locally into your source directory:
 
 * `assets/vendor/confetti/confetti.module.mjs`
@@ -131,7 +131,7 @@ You create your own custom JavaScript entrypoint file in your source folder:
 
 * `assets/js/app.js`
 
-**Phase C: Running `packly build**`
+**Phase C: Running `packly build`**
 Packly performs a clean, straightforward mirror copy of your `assets/` folder over to `public/build/` (while intelligently omitting raw `.scss` files). Your final production-ready directory structure exposed to the web becomes:
 
 * `public/build/vendor/confetti/confetti.module.mjs`
