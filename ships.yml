@@ -3,3 +3,4 @@ app: my-app
 release:
   - ./build.sh
   - cp -r build/* $SHIPS_RELEASE_DIR/
+
